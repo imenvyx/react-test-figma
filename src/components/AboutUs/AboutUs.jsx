@@ -11,22 +11,26 @@ function AboutUs() {
     <div className="h-[722px] w-full flex flex-grow">
       <div className="aboutUs-left w-[60%]">
         <div className="w-[553px] h-[545px]" id="img-canvas">
-          <div className="grid grid-cols-[repeat(auto-fill, minmax(100px, 1fr))] gap-4">
-            <div id="image-collage" className="col-end-2  row-[1/3]">
-              <img src={Img1} alt="" className="" />
+          <div className="relative">
+            <div className="grid grid-cols-[repeat(auto-fill, minmax(100px, 1fr))] gap-4">
+              <div id="image-collage" className="col-end-2  row-[1/3]">
+                <img src={Img1} alt="" className="" />
+              </div>
+              <div id="image-collage" className="col-start-2 col-span-2  ">
+                <img src={Img2} alt="" />
+              </div>
+              <div id="image-collage" className="col-start-2 row-[2/2] ">
+                <img src={Img3} alt="" />
+              </div>
+              <div id="image-collage" className="col-start-3 row-[2/4]">
+                <img src={Img4} alt="" />
+              </div>
+              <div id="image-collage" className="col-[1/3]">
+                <img src={Img5} alt="" />
+              </div>
             </div>
-            <div id="image-collage" className="col-start-2 col-span-2  ">
-              <img src={Img2} alt="" />
-            </div>
-            <div id="image-collage" className="col-start-2 row-[2/2] ">
-              <img src={Img3} alt="" />
-            </div>
-            <div id="image-collage" className="col-start-3 row-[2/4]">
-              <img src={Img4} alt="" />
-            </div>
-            <div id="image-collage" className="col-[1/3]">
-              <img src={Img5} alt="" />
-            </div>
+            <div className="absolute top-0 w-[198px] h-[346px] rounded-[10px] bg-[#2E53A3]"></div>
+            <div className="absolute bottom-0 right-0 w-[198px] h-[346px] rounded-[10px] bg-[#2E53A3]"></div>
           </div>
         </div>
       </div>
