@@ -11,29 +11,31 @@ import "./swiper-styles.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import ServiceCard from "./ServiceCard";
 function SwiperServicies() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + "•" + "</span>";
     },
   };
   return (
     <Swiper
       navigation={true}
       pagination={pagination}
+      slidesPerView={2}
       modules={[Pagination, Navigation]}
       className="swiper-servicies"
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide>
+      <SwiperSlide>
+        <ServiceCard />
+      </SwiperSlide>
+      <SwiperSlide>
+        <ServiceCard />
+      </SwiperSlide>
+      <SwiperSlide>
+        <ServiceCard />
+      </SwiperSlide>
     </Swiper>
   );
 }

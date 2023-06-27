@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SwiperServicies from "./SwiperServicies";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 /* https://react-frontend.pages.dev/slides.json */
 function Services() {
   const [servicies, setServicies] = useState([]);
@@ -19,7 +20,7 @@ function Services() {
   return (
     <div className="h-[722px] w-full">
       <div className="w-[80vw] h-full flex flex-row  items-center mx-auto">
-        <div className="servicies-left w-[50%]">
+        <div className="servicies-left w-[40%]">
           <h2 className="text-[#3A67CC] mb-[18px] text-[20px]  text-[Inter] font-bold leading-[135.523%] uppercase ">
             Servicios
           </h2>
@@ -33,10 +34,10 @@ function Services() {
             derecha tiene un slide o carrusel.
           </p>
           <button className="w-[175px] h-[49px] shrink-0 rounded-[56px] bg-[#2D509E] shadow-[4px_4px_22px_0_#709DDA]  text-[#FFF] text-center text-[24px] text-[Inter] font-semibold leading-[135.523%] tracking-[0.48px]">
-            Ver más
+            Ver más <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
-        <div className="servicies-right w-[50%]">
+        <div className="servicies-right w-[60%] h-full flex items-center ">
           <SwiperServicies />
         </div>
       </div>
