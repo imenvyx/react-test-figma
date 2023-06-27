@@ -2,11 +2,13 @@ import React from "react";
 
 //Images
 import Language from "../../assets/images/languages/image-30-lang-english.png";
+import HeroImg from "../../assets/images/hero-img.png";
+import NumberBackground from "../../assets/images/clip-path-group.png";
 function Hero() {
   return (
-    <div className=" w-full h-[722px] bg-[#001853] shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39);]">
-      <div className="h-[86px] w-full pt-[45px] ">
-        <nav className="flex justify-between items-center flex-wrap max-w-[1401px] h-[86px] bg-[#FFF] m-[auto] rounded-lg shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39)] ">
+    <>
+      <div className="fixed z-10 top-10 h-[86px] w-full ">
+        <nav className="flex justify-between items-center flex-wrap max-w-[90vw] h-[86px] bg-[#FFF] m-[auto] rounded-lg shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39)]">
           <div className="w-[60%]">
             <ul className="flex flex-row justify-around  content-center uppercase ">
               <li>Inicio</li>
@@ -26,9 +28,33 @@ function Hero() {
           </div>
         </nav>
       </div>
-      <div id="hero-left"></div>
-      <div id="hero-right"></div>
-    </div>
+      <div className="relative w-full h-[722px]   bg-[#001853] shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39);]">
+        <img className="absolute right-20" src={NumberBackground} alt="" />
+        <div className="flex flex-row  h-full">
+          <div id="hero-left" className="w-[55%] flex items-center pl-[8%] ">
+            <div className="flex flex-col lg:w-[60%] ">
+              <h1 className="text-[#fff] text-[64px] font-extrabold leading-snug mb-[40px]">
+                Es tiempo de maquetar
+              </h1>
+              <p className="text-[#fff] text-[20px] leading-[135.523%]">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquam accusamus accusantium eius, harum minima odit. Illo odio
+                consequuntur laudantium reprehenderit ipsa corporis nesciunt
+                repellat molestiae, recusandae dolorum, a ratione tenetur?
+              </p>
+            </div>
+          </div>
+          <div id="hero-right" className="flex w-[45%]">
+            <img
+              src={HeroImg}
+              alt=""
+              className="absolute w-[45%] h-[658px] -bottom-[15%]"
+            />
+          </div>
+        </div>
+        <div className=" absolute -bottom-[40px] rounded-xl left-[20%] w-[122px] h-[122px] bg-[#001853] rotate-45"></div>
+      </div>
+    </>
   );
 }
 
