@@ -6,10 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./swiper-styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 function SwiperServicies() {
   const pagination = {
     clickable: true,
@@ -18,7 +19,12 @@ function SwiperServicies() {
     },
   };
   return (
-    <Swiper pagination={pagination} modules={[Pagination]} className="mySwiper">
+    <Swiper
+      navigation={true}
+      pagination={pagination}
+      modules={[Pagination, Navigation]}
+      className="swiper-servicies"
+    >
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
