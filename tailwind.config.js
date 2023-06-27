@@ -26,9 +26,9 @@ module.exports = {
         white: "hsl(0, 0%, 100%)",
       },
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Inter","Roboto", "sans-serif"],
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
 };
