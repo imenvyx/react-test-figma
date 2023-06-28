@@ -18,7 +18,7 @@ function Services() {
 
   console.log(services);
   return (
-    <div className="h-[722px] w-full">
+    <div id="services" className="h-[722px] w-full">
       <div className="w-[80vw] h-full flex flex-row  items-center mx-auto">
         <div className="services-left w-[40%]">
           <h2 className="text-[#3A67CC] mb-[18px] text-[20px]  text-[Inter] font-bold leading-[135.523%] uppercase ">

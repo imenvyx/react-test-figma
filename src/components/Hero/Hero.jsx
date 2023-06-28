@@ -10,7 +10,7 @@ function Hero() {
       <div className="absolute z-10 top-10 h-[86px] w-full ">
         <nav className="flex justify-between items-center flex-wrap max-w-[90vw] h-[86px] bg-[#FFF] m-[auto] rounded-lg shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39)]">
           <div className="w-[60%]">
-            <ul className="flex flex-row justify-around  content-center uppercase ">
+            <ul className="flex flex-row justify-evenly  content-center uppercase ">
               <li>Inicio</li>
               <li>Servicios</li>
               <li>Nosotros</li>
