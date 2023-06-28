@@ -7,7 +7,7 @@ import NumberBackground from "../../assets/images/clip-path-group.png";
 function Hero() {
   return (
     <>
-      <div className="fixed z-10 top-10 h-[86px] w-full ">
+      <div className="absolute z-10 top-10 h-[86px] w-full ">
         <nav className="flex justify-between items-center flex-wrap max-w-[90vw] h-[86px] bg-[#FFF] m-[auto] rounded-lg shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39)]">
           <div className="w-[60%]">
             <ul className="flex flex-row justify-around  content-center uppercase ">
@@ -31,9 +31,9 @@ function Hero() {
       <div className="relative w-full h-[722px]   bg-[#001853] shadow-[0_4px_35px_0_rgba(0, 0, 0, 0.39);]">
         <img className="absolute right-20" src={NumberBackground} alt="" />
         <div className="flex flex-row  h-full">
-          <div id="hero-left" className="w-[55%] flex items-center pl-[8%] ">
-            <div className="flex flex-col lg:w-[60%] ">
-              <h1 className="text-[#fff] text-[64px] font-extrabold leading-snug mb-[40px]">
+          <div id="hero-left" className="w-[50%] flex items-center pl-[8%] ">
+            <div className="flex flex-col lg:w-[80%] ">
+              <h1 className="text-[#fff] text-[64px] font-extrabold leading-snug mb-[28px]">
                 Es tiempo de maquetar
               </h1>
               <p className="text-[#fff] text-[20px] leading-[135.523%]">
@@ -44,11 +44,11 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div id="hero-right" className="flex w-[45%]">
+          <div id="hero-right" className="flex w-[50%] relative">
             <img
               src={HeroImg}
               alt=""
-              className="absolute w-[45%] h-[658px] -bottom-[15%]"
+              className="absolute -bottom-[13%] w-full"
             />
           </div>
         </div>
