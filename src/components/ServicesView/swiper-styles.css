@@ -9,12 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46.5% !important;
+  width: 50% !important;
 }
 
 .swiper-wrapper {
-  justify-content: flex-star;
-  padding-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {

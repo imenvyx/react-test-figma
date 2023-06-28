@@ -37,7 +37,7 @@ function Services() {
             Ver más <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
-        <div className="servicies-right w-[60%] h-full flex items-center ">
+        <div className="servicies-right w-[68%] h-full flex items-center ">
           <SwiperServicies />
         </div>
       </div>

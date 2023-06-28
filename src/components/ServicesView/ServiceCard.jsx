@@ -10,8 +10,9 @@ import IconConfig from "../../assets/images/config.svg"; */
 } */
 
 function ServiceCard() {
+  /* shadow-[0_0_14px_0_rgba(11,27,0,0.10)] */
   return (
-    <div className="flex flex-col justify-center px-6 w-[286px] h-[366px] bg-[#fff] shadow-[0_0_44px_0_rgba(11,27,0,0.10)]">
+    <div className="flex flex-col justify-center px-6 w-[286px] h-[366px] bg-[#fff] shadow-[0_0_14px_0_rgba(11,27,0,0.10)]">
       {/* Icon */}
       <IconMobile
         className="mb-[18px]"
