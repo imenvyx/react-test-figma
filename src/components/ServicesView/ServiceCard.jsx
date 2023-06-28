@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 function IconVariant({ variant, fill = "#2E53A3" }) {
-  console.log(variant);
   if (variant === "mobile")
     return (
       <IconMobile

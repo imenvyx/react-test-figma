@@ -1,4 +1,6 @@
 import React from "react";
+
+//Images
 import Img1 from "../../assets/images/collage/90.png";
 import Img2 from "../../assets/images/collage/91.png";
 import Img3 from "../../assets/images/collage/92.png";
@@ -6,9 +8,16 @@ import Img5 from "../../assets/images/collage/93.png";
 import Img4 from "../../assets/images/collage/94.png";
 
 import "./about-us.css";
+import { useServices } from "../../contexts/ServicesProvider";
 function AboutUs() {
+  const [services] = useServices();
+  console.log(services);
+
   return (
-    <div className="h-[722px] flex flex-row justify-center items-center w-[80vw] mx-auto">
+    <section
+      id="about-us"
+      className="h-[722px] flex flex-row justify-center items-center w-[80vw] mx-auto"
+    >
       <div className="aboutUs-left w-[55%]  flex ">
         <div className="w-[553px] h-[545px]" id="img-canvas">
           <div className="relative">
@@ -51,14 +60,21 @@ function AboutUs() {
           Usa Context para acceder a los títulos de abajo desde la sección
           anterior
         </h4>
-        <p className="inline-flex flex-row items-center text-[#606060] text-right text-[16px] text-[Inter] font-medium leading-[124.523%]">
-          Pruebas y depuración de problemas{" "}
-          <span className=" ml-8 w-[20px] h-[20px] text-center  leading-[20px] text-[22px]   text-[#007aff]  opacity-1 bg-[#fff] rounded-full border-2 border-[#3D93FF]">
-            •
-          </span>
-        </p>
+        <div className="flex flex-col items-end">
+          {services.map((service) => (
+            <p
+              key={service.id}
+              className="inline-flex flex-row items-center mb-[18px] text-[#606060] text-right text-[16px] text-[Inter] font-medium leading-[124.523%]"
+            >
+              {service.title}
+              <span className=" ml-8 w-[20px] h-[20px] text-center  leading-[20px] text-[22px]   text-[#007aff]  opacity-1 bg-[#fff] rounded-full border-2 border-[#3D93FF]">
+                •
+              </span>
+            </p>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
