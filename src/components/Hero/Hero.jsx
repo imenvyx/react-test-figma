@@ -48,7 +48,7 @@ function Hero() {
             <img
               src={HeroImg}
               alt=""
-              className="absolute -bottom-[13%] w-full"
+              className="absolute -bottom-[15%] w-full"
             />
           </div>
         </div>
