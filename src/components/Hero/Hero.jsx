@@ -19,7 +19,7 @@ function Hero() {
             </ul>
           </div>
           <div className="flex flex-row gap-[20px]   items-center w-[20%]">
-            <button className="w-[175px] h-[49px] shrink-0 rounded-[56px] bg-[#2D509E] shadow-[4px_4px_22px_0_#709DDA]">
+            <button className="w-[175px] h-[49px] shrink-0 rounded-[56px] bg-[#2D509E] shadow-[4px_4px_22px_0_#709DDA] text-[#FFF] text-center text-[20px] text-[Inter] font-semibold leading-[135.523%] tracking-[0.4px]">
               Contactar
             </button>
             <div className="w-27px h-18px">

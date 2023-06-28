@@ -12,7 +12,7 @@ import "./swiper-styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import ServiceCard from "./ServiceCard";
-function SwiperServicies() {
+function SwiperServicies({ services }) {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
@@ -27,15 +27,11 @@ function SwiperServicies() {
       modules={[Pagination, Navigation]}
       className="swiper-servicies"
     >
-      <SwiperSlide>
-        <ServiceCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCard />
-      </SwiperSlide>
+      {services.map((service) => (
+        <SwiperSlide key={service.id}>
+          <ServiceCard service={service} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
